@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block title %}Início | JWC Tecnologia{% endblock %}
+
+{% block content %}
+<div class="p-5 mb-4 bg-white rounded-3 shadow-sm border">
+  <div class="container-fluid py-3">
+    <h1 class="display-5 fw-bold text-dark">Bem-vindo à JWC Tecnologia</h1>
+    <p class="col-md-8 fs-5 text-secondary">
+      Plataforma corporativa de serviços e soluções em software desenvolvida em Python e Django.
+      Área administrativa habilitada e governança de dados ativada.
+    </p>
+    <hr class="my-4">
+    <a class="btn btn-primary btn-lg" href="{% url 'produtos' %}" role="button">
+      Ver Catálogo de Produtos &raquo;
+    </a>
+  </div>
+</div>
+{% endblock %}
